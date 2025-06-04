@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { collection, getDocs, query, where, doc, updateDoc } from 'firebase/firestore';
 import { Wheel } from 'react-custom-roulette';
 import { db } from '../fireBase';
-import '../styles/hero.css'
+import '../styles/hero.css';
+import BonoVisual from './bonoVisual';
 
 const data = [
   { option: 'Netflix' },
-  { option: 'Disney+' },      
+  { option: 'Disney+' },
   { option: 'Amazon' },
   { option: 'HBO Max' },
   { option: 'Sorpresa' },
@@ -21,12 +22,13 @@ export const RuletaConFirebase = () => {
   const [mustSpin, setMustSpin] = useState(false);
   const [loading, setLoading] = useState(false);
   const [premioFinal, setPremioFinal] = useState(null);
+  const [mostrarBono, setMostrarBono] = useState(false);
 
   const handleParticipar = async () => {
     if (!codigo) return alert('Debes ingresar un código.');
 
     setLoading(true);
-    setPremioFinal(null); // Limpiar mensaje anterior
+    setMostrarBono(false); // Oculta el bono si se está participando con otro código
 
     const codigosRef = collection(db, 'codigos');
     const q = query(codigosRef, where('codigo_ingresado', '==', codigo));
@@ -48,8 +50,7 @@ export const RuletaConFirebase = () => {
     }
 
     const premioRaw = datos.premio?.trim();
-    const premio = premioRaw;
-    const index = data.findIndex(p => p.option.trim().toLowerCase() === premio.toLowerCase());
+    const index = data.findIndex(p => p.option.trim().toLowerCase() === premioRaw.toLowerCase());
 
     if (index === -1) {
       alert(`⚠️ El premio "${premioRaw}" no está configurado en la ruleta.`);
@@ -60,21 +61,22 @@ export const RuletaConFirebase = () => {
     setPremioIndex(index);
     setMustSpin(true);
 
-    // Guardar temporalmente los datos para mostrarlos cuando la ruleta se detenga
-    setPremioFinal({ premio, codigoRedencion: datos.codigo_redencion, docId: docData.id });
+    setPremioFinal({
+      premio: premioRaw,
+      codigoRedencion: datos.codigo_redencion,
+      docId: docData.id,
+    });
   };
 
   const handleStop = async () => {
     if (!premioFinal) return;
 
-    alert(`🎉 ¡Ganaste: ${premioFinal.premio}!\nTu código de redención es: ${premioFinal.codigoRedencion}`);
-
-    // Marcar como usado
     await updateDoc(doc(db, 'codigos', premioFinal.docId), { usado: true });
 
-    setCodigo('');
+    setMustSpin(false);
     setLoading(false);
-    setPremioFinal(null);
+    setCodigo('');
+    setMostrarBono(true); // ✅ Mostrar bono solo aquí
   };
 
   return (
@@ -112,13 +114,14 @@ export const RuletaConFirebase = () => {
           backgroundColors={['#fff', '#f72585']}
           textColors={['#000']}
           radiusLineWidth={1}
-          onStopSpinning={() => {
-            setMustSpin(false);
-            handleStop();
-          }}
+          onStopSpinning={handleStop}
         />
+
+        {/* ✅ Mostrar solo al terminar de girar */}
+        {mostrarBono && premioFinal && (
+          <BonoVisual codigoRedencion={premioFinal.codigoRedencion} />
+        )}
       </div>
     </div>
   );
 };
-
