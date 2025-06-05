@@ -59,7 +59,7 @@ const BonoVisual = ({ codigoRedencion }) => {
         }}
       >
         <img
-          src="public/bonos/tarjeta-base.png"
+          src={`${import.meta.env.BASE_URL}public/bonos/tarjeta-base.png`}
           alt="Bono base"
           style={{
             width: "100%",
