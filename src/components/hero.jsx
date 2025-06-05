@@ -16,7 +16,7 @@ export const Hero = () => {
                   <img src={logo} alt="logo-mypantalla" />
               </div> */}
                 <h1 className="hero-title">
-                ¡BIENVENIDO A <span className="highlight-name">MY PANTALLA GOPLAY</span>
+                ¡BIENVENIDO A <span className="highlight-name">MY PANTALLA- GOPLAY</span>
                 </h1>
 
                 <span className="sub-banner">Acabas de tomar una excelente decisión</span>
