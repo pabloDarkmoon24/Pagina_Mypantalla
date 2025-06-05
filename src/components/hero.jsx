@@ -21,7 +21,7 @@ export const Hero = () => {
                 Trabaja desde cualquier lugar y sé parte del negocio digital del entretenimiento que no para de crecer.
                 </p>
 
-                <button className="hero-btn">IR AL PANEL DE DISTRIBUIDOR</button>
+                <button className="hero-btn">IR AL PANEL DE DISTRIBUIDOR 2</button>
             </div>
             </div>
 
