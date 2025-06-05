@@ -1,5 +1,6 @@
 import '../styles/hero.css'
 import { RuletaConFirebase } from './ruletaConFirebase';
+import logo from '../../public/logo.png'
 
 export const Hero = () => {
   return (
@@ -11,6 +12,9 @@ export const Hero = () => {
         </div>
         <div className="col col-8">
             <div className="hero-text-container">
+              {/* <div className='mypantalla'>
+                  <img src={logo} alt="logo-mypantalla" />
+              </div> */}
                 <h1 className="hero-title">
                 ¡BIENVENIDO A <span className="highlight-name">MY PANTALLA GOPLAY</span>
                 </h1>
@@ -21,8 +25,15 @@ export const Hero = () => {
                 Trabaja desde cualquier lugar y sé parte del negocio digital del entretenimiento que no para de crecer.
                 </p>
 
-                <button className="hero-btn">IR AL PANEL DE DISTRIBUIDOR 2</button>
-            </div>
+                <a
+                    href="https://mypantalla.goplay.com.co"  
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hero-btn"
+                  >
+                    IR AL PANEL DE DISTRIBUIDOR
+                  </a>
+                              </div>
             </div>
 
         <div className="col col-4 ruleta-right">
@@ -32,5 +43,8 @@ export const Hero = () => {
         </div>
       </div>
     </section>
+    
+    
+    
   );
 };

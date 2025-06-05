@@ -1,0 +1,79 @@
+.business-model-section {
+  background-color: #0a0d39;  /* fondo igual al resto de la landing */
+  padding: 10px 20px 60px;    /* arriba más amplio que abajo */
+  text-align: center;
+  color: white;
+  margin-top: 40px;           /* separación desde la sección anterior */
+}
+
+.business-title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #00d4ff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+}
+
+.business-description {
+  font-size: 32px;
+  color: #ddd;
+  margin: 0 auto 40px;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .business-title {
+    font-size: 38px;
+  }
+
+  .business-description {
+    font-size: 24px;
+    margin: 20px auto 30px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 767px) {
+  .business-title {
+    font-size: 30px;
+  }
+
+  .business-description {
+    font-size: 18px;
+    margin: 20px auto 25px;
+    padding: 0 10px;
+  }
+}
+
+/* MONITOR GRANDE */
+@media (min-width: 1440px) {
+  .business-title {
+    font-size: 60px;
+  }
+
+  .business-description {
+    font-size: 36px;
+  }
+}

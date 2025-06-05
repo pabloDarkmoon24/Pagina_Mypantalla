@@ -1,26 +1,32 @@
 .hero-container {
   width: 100%;
-  padding-top: 100px;      
-  padding-bottom: 40px;    
+  padding-top: 100px;       
   background-color: #0a0d39;
   color: white;
-  min-height: 100vh;
   display: flex;
   align-items: flex-start; 
+  
+ 
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 0 40px;
-  max-width: 1840px; /* O 1440px si quieres más ancho */
+  padding: 30px 40px;
+  max-width: 1840px;
   box-sizing: border-box;
+  border-radius: 40px;
+  
+  
+ 
 }
 
 .col {
   padding: 0 15px;
   box-sizing: border-box;
+  
+  
+  
 }
 
 .col-8 {
@@ -31,7 +37,19 @@
 .col-4 {
   flex: 0 0 33.3333%;
   max-width: 40%;
+  
 }
+/* .mypantalla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mypantalla img {
+  max-width: 300px;
+  height: auto;
+} */
 
 .hero-welcome {
   display: flex;
@@ -129,15 +147,14 @@
 .hero-ruleta {
   width: 40vw; 
   height: 100%;
-  background: linear-gradient(135deg, #2b0b3f, #e6007e);
-  padding: 30px 20px;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   position: relative;
+  background: linear-gradient(200deg, #7c0245, #0a0d39);
 }
 
 .hero-ruleta h2 {
@@ -180,19 +197,20 @@
   }
 
   .hero-title {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+    margin-top: 0px;
   }
 
   .highlight-banner,
   .sub-banner {
-    font-size: 13px;
+    font-size: 25px;
     padding: 6px 10px;
     margin-bottom: 8px;
   }
 
   .hero-description {
-    font-size: 13px;
+    font-size: 18px;
     text-align: center;
   }
 

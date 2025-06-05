@@ -1,0 +1,62 @@
+.contact-section {
+  background-color: #0a0d39;
+  text-align: center;
+}
+
+.contact-message {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.contact-button {
+  background-color: #00d4ff;
+  color: #000;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #00aacc;
+}
+/* TABLET */
+@media (max-width: 1024px) {
+  .contact-message {
+    font-size: 28px;
+  }
+
+  .contact-button {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 767px) {
+  .contact-message {
+    font-size: 22px;
+  }
+
+  .contact-button {
+    font-size: 20px;
+    padding: 8px 18px;
+  }
+}
+
+/* MONITOR GRANDE */
+@media (min-width: 1440px) {
+  .contact-message {
+    font-size: 48px;
+  }
+
+  .contact-button {
+    font-size: 36px;
+    padding: 12px 28px;
+  }
+}

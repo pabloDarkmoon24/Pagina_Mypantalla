@@ -6,14 +6,18 @@ import '../styles/hero.css';
 import BonoVisual from './bonoVisual';
 
 const data = [
-  { option: 'Netflix' },
-  { option: 'Disney+' },
-  { option: 'Amazon' },
-  { option: 'HBO Max' },
-  { option: 'Sorpresa' },
-  { option: '5% OFF' },
-  { option: '10% OFF' },
-  { option: 'Sigue intentando' },
+  { option: 'bono 1 usd' },
+  { option: 'bono 10 usd' },
+  { option: 'bono 50 usd' },
+  { option: 'bono 100 usd' },
+  { option: 'directv pantalla' },
+  { option: 'vix pantalla' },
+  { option: 'prime pantalla' },
+  { option: 'canva pro' },
+  { option: 'max pantalla' },
+  { option: 'crunchyroll' },
+  { option: 'youtube' },
+  { option: 'sigue intentando' } 
 ];
 
 export const RuletaConFirebase = () => {
@@ -81,7 +85,7 @@ export const RuletaConFirebase = () => {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h2>Ingresa tu código</h2>
+      <h1>Ingresa tu código</h1>
       <input
         type="text"
         value={codigo}
@@ -111,9 +115,14 @@ export const RuletaConFirebase = () => {
           mustStartSpinning={mustSpin}
           prizeNumber={premioIndex}
           data={data}
-          backgroundColors={['#fff', '#f72585']}
+          backgroundColors={['#00d4ff', '#e6007e']} // Celeste y fucsia
           textColors={['#000']}
-          radiusLineWidth={1}
+          radiusLineColor="#fff"
+          outerBorderColor="#fff"
+          outerBorderWidth={5}
+          innerBorderColor="#e6007e"
+          innerBorderWidth={10}
+          fontSize={16}
           onStopSpinning={handleStop}
         />
 
