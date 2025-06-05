@@ -24,9 +24,8 @@ a:hover {
 
 body {
   margin: 0;
-  padding: 0;
+  overflow-x: hidden;
   background-color: #0a0d39;
-  font-family: 'sans-serif'; /* o el que estés usando */
 }
 
 h1 {

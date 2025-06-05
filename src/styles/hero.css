@@ -1,24 +1,15 @@
 .hero-container {
   width: 100%;
-  padding-top: 100px;       
+  max-width: 100vw;
+  overflow-x: hidden;
   background-color: #0a0d39;
-  color: white;
-  display: flex;
-  align-items: flex-start; 
-  
- 
 }
+
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 30px 40px;
-  max-width: 1840px;
   box-sizing: border-box;
-  border-radius: 40px;
-  
-  
- 
 }
 
 .col {
