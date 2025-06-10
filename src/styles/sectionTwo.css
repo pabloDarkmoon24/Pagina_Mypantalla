@@ -1,13 +1,9 @@
-.contact-section {
-  background-color: #0a0d39;
-  text-align: center;
-}
-
 .contact-message {
   color: white;
   font-weight: bold;
   font-size: 40px;
-  margin-top: 30px;
+  margin-top: 20px;   /* ↓ puedes bajarlo incluso a 10px si lo quieres más pegado */
+  margin-bottom: 8px; /* ↓ este es el espacio entre el texto y el botón */
 }
 
 .contact-button {
@@ -15,13 +11,15 @@
   color: #000;
   font-weight: bold;
   font-size: 32px;
-  padding: 10px 24px;
   border: none;
   border-radius: 40px;
   cursor: pointer;
   transition: background 0.3s ease;
-}
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 0; 
 
+}
 .contact-button:hover {
   background-color: #00aacc;
 }

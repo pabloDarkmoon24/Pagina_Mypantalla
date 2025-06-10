@@ -1,0 +1,188 @@
+.testimonials-section {
+  background: url('/public/fondo-testimonios.png') center/cover no-repeat;
+  padding: 80px 20px;
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+[class*='col-'] {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.col-4 {
+  width: 33.3333%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Responsive columns */
+@media (max-width: 768px) {
+  .col-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #00ffff;
+}
+
+.testimonial-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-card img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+/* Animación rebote */
+.testimonial-card:hover {
+  animation: bounce 0.6s ease;
+}
+
+/* Keyframes para rebote */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* FAQ section */
+.faq-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  color: #00ffff;
+  margin-bottom: 4px; /* casi pegado */
+  line-height: 1.1;   /* reduce el espacio vertical interno */
+}
+
+.faq-subtitle {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.faq-item {
+  background-color: white;
+  color: #11142d;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+  padding: 0;
+}
+
+.faq-item h4 {
+  background:#00ffff;
+  color: #001b44;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 0;
+  border-radius: 0;
+  
+}
+
+.faq-item p {
+  padding: 16px 20px;
+  margin: 0;
+  font-size: 16px;
+  color: #11142d;
+}
+
+.faq-extra {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+
+.faq-extra .red {
+  background-color: #ff4ec2;
+  color: black;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  font-style: italic;
+}
+/* Botón Telegram */
+.telegram-btn {
+  display: inline-block;
+  margin: 20px auto 0;
+  padding: 14px 32px;
+  background-color: #00ffff;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background 0.3s ease;
+}
+
+.telegram-btn:hover {
+  background-color: #00c0c0;
+}
+
+/* Responsive para FAQ texto */
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 26px;
+  }
+
+  .faq-title {
+    font-size: 30px;
+  }
+
+  .faq-subtitle {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .faq-extra {
+    font-size: 14px;
+  }
+
+  .telegram-btn {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+}

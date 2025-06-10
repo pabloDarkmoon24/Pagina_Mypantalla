@@ -3,9 +3,12 @@ import '../styles/sectionThree.css'
 export  const SectionThree = () => {
     return (
         <section className="business-model-section">
-        <h2 className="business-title">COMO FUNCIONA NUESTRO MODELO DE NEGOCIO</h2>
+        <h2 className="business-title">
+            <span className="highlight-magenta">¿CÓMO FUNCIONA </span> <span className="highlight-cyan">NUESTRO <br /> MODELO DE NEGOCIO</span><span className="highlight-magenta">?</span>
+        </h2>
         <p className="business-description">
-            Aquí te mostramos cómo puedes empezar a generar ingresos desde tu celular, sin jefes, sin horarios, sin inventarios
+            Aquí te mostramos cómo puedes empezar a generar ingresos desde tu celular,
+            <span className="highlight-inline"> sin jefes, sin horarios, sin inventarios</span>
         </p>
 
         <div className="video-container">
@@ -18,7 +21,7 @@ export  const SectionThree = () => {
             ></iframe>
         </div>
         </section>
-    )
+);
 }
 
 

@@ -10,15 +10,18 @@
 .domina-title {
   font-size: 50px;
   font-weight: 900;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   margin-top: 0;
+  line-height: 1.1;
 }
 
 .domina-subtitle {
   font-size: 25px;
   font-weight: 700;
+  margin-top: 0;
   margin-bottom: 30px;
   color: #000;
+  line-height: 1.1;
 }
 
 .domina-cards {
@@ -32,7 +35,6 @@
 
 .domina-card {
   width: 250px;
-  padding: 0;
   flex-shrink: 0;
 }
 
@@ -42,19 +44,41 @@
   display: block;
 }
 
+.domina-card-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+/* Footer destacado */
 .domina-footer {
   background-color: #11142d;
   color: white;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   padding: 12px 24px;
   border-radius: 30px;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 20px;
   line-height: 1.4;
 }
 
-/* TABLET (ancho entre 768px y 1024px) */
+.resaltado {
+  display: inline;
+}
+
+.azul {
+  color: #00ffff;
+}
+
+/* Subfooter */
+.domina-subfooter {
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* TABLET */
 @media (max-width: 1024px) {
   .domina-title {
     font-size: 36px;
@@ -69,12 +93,16 @@
   }
 
   .domina-footer {
-    font-size: 24px;
+    font-size: 22px;
     padding: 10px 18px;
+  }
+
+  .domina-subfooter {
+    font-size: 16px;
   }
 }
 
-/* CELULAR (menos de 768px) */
+/* CELULAR */
 @media (max-width: 767px) {
   .domina-title {
     font-size: 28px;
@@ -99,16 +127,20 @@
     padding: 10px 16px;
     border-radius: 20px;
   }
+
+  .domina-subfooter {
+    font-size: 14px;
+  }
 }
 
-/* MONITORES GRANDES */
+/* MONITOR GRANDE */
 @media (min-width: 1440px) {
   .domina-title {
     font-size: 60px;
   }
 
   .domina-subtitle {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .domina-card {
@@ -118,5 +150,8 @@
   .domina-footer {
     font-size: 36px;
   }
-}
 
+  .domina-subfooter {
+    font-size: 30px;
+  }
+}

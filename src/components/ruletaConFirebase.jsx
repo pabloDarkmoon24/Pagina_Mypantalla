@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { collection, getDocs, query, where, doc, updateDoc } from 'firebase/firestore';
 import { Wheel } from 'react-custom-roulette';
 import { db } from '../fireBase';
-import '../styles/hero.css';
 import BonoVisual from './bonoVisual';
+import '../styles/sectionSix.css'
 
 const data = [
   { option: 'bono 1 usd' },
@@ -83,39 +83,16 @@ export const RuletaConFirebase = () => {
     setMostrarBono(true); // ✅ Mostrar bono solo aquí
   };
 
-  return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>Ingresa tu código</h1>
-      <input
-        type="text"
-        value={codigo}
-        onChange={e => setCodigo(e.target.value.toUpperCase())}
-        placeholder="Ej: ABC123"
-        style={{ padding: '10px', fontSize: '16px', marginBottom: '10px' }}
-      />
-      <br />
-      <button
-        onClick={handleParticipar}
-        disabled={mustSpin || loading}
-        style={{
-          padding: '10px 20px',
-          fontWeight: 'bold',
-          cursor: 'pointer',
-          backgroundColor: '#00d4ff',
-          border: 'none',
-          borderRadius: '8px',
-          marginBottom: '20px',
-        }}
-      >
-        {loading ? 'Verificando...' : 'Participar'}
-      </button>
-
-      <div className="wheel-wrapper">
+return (
+  <div className="ruleta-container">
+    {/* RUEDA A LA IZQUIERDA */}
+    <div className="ruleta-col left">
+      <div className="ruleta-wheel-box">
         <Wheel
           mustStartSpinning={mustSpin}
           prizeNumber={premioIndex}
           data={data}
-          backgroundColors={['#00d4ff', '#e6007e']} // Celeste y fucsia
+          backgroundColors={['#00d4ff', '#e6007e']}
           textColors={['#000']}
           radiusLineColor="#fff"
           outerBorderColor="#fff"
@@ -125,12 +102,32 @@ export const RuletaConFirebase = () => {
           fontSize={16}
           onStopSpinning={handleStop}
         />
-
-        {/* ✅ Mostrar solo al terminar de girar */}
         {mostrarBono && premioFinal && (
           <BonoVisual codigoRedencion={premioFinal.codigoRedencion} />
         )}
       </div>
     </div>
-  );
-};
+
+    {/* CUADRO A LA DERECHA */}
+    <div className="ruleta-col right">
+      <div className="ruleta-input-box">
+        <h1 className="ruleta-title">INGRESA TU <br /> CÓDIGO</h1>
+        <input
+          type="text"
+          value={codigo}
+          onChange={e => setCodigo(e.target.value.toUpperCase())}
+          placeholder="Ej: ABC123"
+          className="ruleta-input"
+        />
+        <button
+          onClick={handleParticipar}
+          disabled={mustSpin || loading}
+          className="ruleta-button"
+        >
+          {loading ? 'Verificando...' : 'GIRAR RULETA'}
+        </button>
+      </div>
+    </div>
+  </div>
+);
+}
