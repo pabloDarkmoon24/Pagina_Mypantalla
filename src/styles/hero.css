@@ -11,7 +11,12 @@
   color: white;
   overflow: hidden;
 }
-
+.image2{
+  display: none;
+}
+.mobile-only{
+  display: none;
+}
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -147,11 +152,26 @@
   .hero {
     padding: 0px 15px;
   }
+  .titulos{
+  display: none;
+  }
+  .image1{
+    display: none;
+  }
+
+  .image2{
+  display: block;
+}
 
   .hero-heading {
     font-size: 32px;
     margin-bottom: 0px;
-    margin-top: 0px;
+  }
+
+  .mobile-only {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .hero-subheading {
@@ -198,4 +218,5 @@
     transform: rotate(-5deg);
   }
 }
+
 
