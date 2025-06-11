@@ -195,12 +195,16 @@
   .hero-banner {
     font-size: 16px;
     padding: 6px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .hero-description {
     font-size: 16px;
     line-height: 1.4;
     padding: 0 5px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .hero-footer-text {
