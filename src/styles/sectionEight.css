@@ -1,0 +1,162 @@
+.bonus-section {
+  background-color: #000051;
+  padding: 20px 20px;
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+[class*='col-'] {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bonus-image img {
+  width: 100%;
+  max-width: 680px;
+  display: block;
+  margin: 0 auto;
+}
+
+.bonus-title {
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 0px;
+}
+
+.highlight-magenta {
+  font-size: 60px;
+  color: #ff4ec2;
+}
+
+.highlight-cyan {
+  background-color: #00ffff;
+  color: black;
+  border-radius: 6px;
+  padding: 0 6px;
+}
+
+.bonus-description {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.bonus-description .cyan {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.bonus-description .magenta {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.bonus-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.bonus-benefits li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  padding: 14px 18px;
+  border: 2px solid #ff4ec2;
+  border-radius: 12px;
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.bonus-benefits .icon {
+  font-size: 22px;
+  color: white;
+  background-color: #001240;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.bonus-button {
+  display: inline-block;
+  background: linear-gradient(to right, #00ffff, #00c4ff);
+  color: #001240;
+  font-weight: 900;
+  font-size: 28px;
+  padding: 16px 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.bonus-button:hover {
+  background: linear-gradient(to right, #00c0e0, #00a5cc);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .col-6 {
+    width: 100%;
+  }
+
+  .bonus-title {
+    font-size: 30px;
+  }
+
+  .highlight-magenta {
+    font-size: 35px}
+
+  .bonus-description {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bonus-text {
+    margin-top: 30px;
+  }
+
+  .bonus-benefits {
+    font-size: 14px;
+  }
+
+  .bonus-button {
+    font-size: 20px;
+    padding: 12px 28px;
+  }
+}

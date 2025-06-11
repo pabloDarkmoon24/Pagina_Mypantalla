@@ -60,24 +60,37 @@
   border-radius: 16px;
 }
 
-/* 📱 CELULAR */
 @media (max-width: 767px) {
+  .business-model-section {
+    margin: 0;
+  }
+
   .business-title {
-    font-size: 28px;
-    padding: 0 10px;
+    font-size: 26px;
+    padding: 0;
+    line-height: 1.2;
+    margin-bottom: 8px;
   }
 
   .business-description {
     font-size: 16px;
-    margin: 20px auto 30px;
-    padding: 0 10px;
+    margin: 16px 0 24px;
+    line-height: 1.5;
+    padding: 0;
   }
 
   .video-container {
     max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 56.25%; /* mantiene relación 16:9 */
+  }
+
+  .video-container iframe {
     border-radius: 10px;
   }
 }
+
 
 /* 💻 PORTÁTIL Y TABLET */
 @media (min-width: 768px) and (max-width: 1439px) {

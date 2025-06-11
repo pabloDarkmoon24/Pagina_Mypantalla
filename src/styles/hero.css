@@ -134,14 +134,55 @@
   background: linear-gradient(to right, #00bcd4, #005bb5);
 }
 
-/* Responsive extra para pantallas MUY pequeñas */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero-heading {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .hero-subheading {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
   .hero-box {
+    flex-direction: column;
     padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-banner {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 5px;
+  }
+
+  .hero-footer-text {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .hero-btn {
+    font-size: 18px;
+    padding: 12px 20px;
   }
 
   .hero-image img {
-    max-width: 280px;
-    transform: rotate(-6deg);
+    max-width: 240px;
+    transform: rotate(-5deg);
   }
 }
+

@@ -56,8 +56,7 @@ export const SectionSeven = () => {
         <p className="faq-extra">
           <span className="red">¿Tienes alguna duda adicional?</span> Escríbenos directamente <br /> en nuestro canal de atención en Telegram!
         </p>
-
-        <a href="https://t.me/mypantalla" target="_blank" className="telegram-btn">IR A TELEGRAM</a>
+        <a href="https://t.me/Mypantalla_Bot" target="_blank" rel="noopener noreferrer" className="telegram-btn">IR A TELEGRAM</a>
       </div>
     </section>
   );

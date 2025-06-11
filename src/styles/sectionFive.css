@@ -102,36 +102,55 @@
   }
 }
 
-/* CELULAR */
 @media (max-width: 767px) {
+  .domina-section {
+    padding: 40px 0%;
+  }
+
   .domina-title {
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 4px;
+    line-height: 1.1;
   }
 
   .domina-subtitle {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000;
+    line-height: 1.2;
   }
 
   .domina-cards {
     flex-direction: column;
     align-items: center;
+    gap: 16px;
   }
 
   .domina-card {
-    width: 80%;
-    max-width: 300px;
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .domina-card-text {
+    font-size: 14px;
+    margin-top: 8px;
   }
 
   .domina-footer {
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 16px;
     border-radius: 20px;
+    margin-top: 24px;
+    line-height: 1.4;
   }
 
   .domina-subfooter {
-    font-size: 14px;
+    font-size: 13px;
+    margin-top: 14px;
+    padding: 0 10px;
   }
 }
+
 
 /* MONITOR GRANDE */
 @media (min-width: 1440px) {

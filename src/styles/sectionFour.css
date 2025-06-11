@@ -79,19 +79,41 @@
   }
 }
 
-/* CELULAR */
 @media (max-width: 767px) {
+  .tutorials-section {
+    padding: 0px 16px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
   .tutorials-title {
-    font-size: 30px;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 8px;
   }
 
   .tutorials-subtitle {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 1.4;
+    padding: 0 6px;
+  }
+
+  .tutorials-grid {
+    gap: 16px;
+  }
+
+  .tutorial-heading {
+    font-size: 13px;
+    margin: 12px 8px 4px;
+  }
+
+  .tutorial-description {
+    font-size: 12px;
+    margin: 0 8px 12px;
   }
 }
 
-/* MONITOR GRANDE */
 @media (min-width: 1440px) {
   .tutorials-title {
     font-size: 60px;
