@@ -67,6 +67,7 @@
   margin-bottom: 30px;
   line-height: 1.6;
   text-align: left;
+  margin-top: 200px;
 }
 
 .bonus-description .cyan {
@@ -129,34 +130,68 @@
   background: linear-gradient(to right, #00c0e0, #00a5cc);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+    margin: 0;
+  }
+
   .col-6 {
     width: 100%;
+    padding: 0;
   }
 
   .bonus-title {
-    font-size: 30px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 
   .highlight-magenta {
-    font-size: 35px}
+    font-size: 32px;
+  }
+
+  .highlight-cyan {
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .bonus-image img {
+    max-width: 300px;
+    margin: 20px auto 0;
+    display: block;
+  }
 
   .bonus-description {
     font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-  }
-
-  .bonus-text {
-    margin-top: 30px;
   }
 
   .bonus-benefits {
     font-size: 14px;
+    padding: 0;
+  }
+
+  .bonus-benefits li {
+    padding: 12px;
+    font-size: 14px;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .bonus-benefits .icon {
+    width: 22px;
+    height: 22px;
+    font-size: 16px;
   }
 
   .bonus-button {
-    font-size: 20px;
-    padding: 12px 28px;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 10px auto 0;
+    display: block;
+    width: fit-content;
   }
 }

@@ -17,7 +17,7 @@ export const Hero = () => {
           <div className="col-12">
             <div className="hero-box">
               <div className="hero-text">
-                <h2 className="hero-title">¡BIENVENIDO! A <span><br />MY PANTALLA</span></h2>
+                <h2 className="hero-title">¡BIENVENIDO! A <span className="hero-title2"><br />MY PANTALLA</span></h2>
                 <div className="hero-banner">Acabas de tomar una excelente decisión</div>
                 <p className="hero-description">
                   Trabaja desde cualquier lugar y sé parte del <span>negocio digital del entretenimiento</span> que no para de crecer.

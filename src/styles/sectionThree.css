@@ -18,7 +18,7 @@
   color: #ff4ec2;
 }
 
-.highlight-cyan {
+.highlight-cyan2 {
   color: #00d4ff;
 }
 
@@ -39,13 +39,12 @@
   margin-left: 6px;
 }
 
-/* Contenedor del video */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  max-width: 70%;
+  max-width: 100%;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
@@ -60,64 +59,42 @@
   border-radius: 16px;
 }
 
+
+
 @media (max-width: 767px) {
   .business-model-section {
-    margin: 0;
+    padding: 40px 15px;
+    margin-top: 20px;
   }
 
   .business-title {
-    font-size: 26px;
-    padding: 0;
+    font-size: 28px;
     line-height: 1.2;
     margin-bottom: 8px;
+    padding: 0 10px;
   }
 
   .business-description {
     font-size: 16px;
-    margin: 16px 0 24px;
     line-height: 1.5;
-    padding: 0;
+    margin: 20px auto 30px;
+    padding: 0 10px;
   }
 
   .video-container {
     max-width: 100%;
-    width: 100%;
     border-radius: 10px;
-    padding-bottom: 56.25%; /* mantiene relación 16:9 */
+    padding-bottom: 56.25%;
   }
 
   .video-container iframe {
     border-radius: 10px;
   }
-}
 
-
-/* 💻 PORTÁTIL Y TABLET */
-@media (min-width: 768px) and (max-width: 1439px) {
-  .business-title {
-    font-size: 40px;
-  }
-
-  .business-description {
-    font-size: 20px;
-  }
-
-  .video-container {
-    max-width: 85%;
-  }
-}
-
-/* 🖥️ MONITOR GRANDE */
-@media (min-width: 1440px) {
-  .business-title {
-    font-size: 60px;
-  }
-
-  .business-description {
-    font-size: 30px;
-  }
-
-  .video-container {
-    max-width: 800px;
+  .highlight-inline {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 2px 6px;
+    font-size: 14px;
   }
 }

@@ -4,7 +4,9 @@ export  const SectionThree = () => {
     return (
         <section className="business-model-section">
         <h2 className="business-title">
-            <span className="highlight-magenta">¿CÓMO FUNCIONA </span> <span className="highlight-cyan">NUESTRO <br /> MODELO DE NEGOCIO</span><span className="highlight-magenta">?</span>
+            <span className="highlight-magenta">¿CÓMO FUNCIONA </span>
+            <span className="highlight-cyan2">MODELO DE NEGOCIO</span>
+            <span className="highlight-magenta">?</span>
         </h2>
         <p className="business-description">
             Aquí te mostramos cómo puedes empezar a generar ingresos desde tu celular,
