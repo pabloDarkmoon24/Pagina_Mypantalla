@@ -2,6 +2,7 @@ import '../styles/sectionSix.css'
 import { RuletaConFirebase } from './ruletaConFirebase';
 import logo from '../../public/logo.png'
 import '../styles/sectionTwo.css'
+import boton from '../../public/contacta-un-distribuidor.png'
 
 export const SectionSix = () => {
   return (
@@ -29,12 +30,15 @@ export const SectionSix = () => {
               ¿Aún no estás activo? Encuentra un distribuidor
             </p>
             <a
-              className="contact-button"
               href="https://drive.google.com/file/d/1Qd2ivBAoKW-rl6ki70FzqclCdHnExsdu/view"
               target="_blank"
               rel="noopener noreferrer"
             >
-              CONTÁCTA UN DISTRIBUIDOR
+              <img
+                src={boton}
+                alt="Contáctanos"
+                className="contact-button-img"
+              />
             </a>
           </div>
         </div>

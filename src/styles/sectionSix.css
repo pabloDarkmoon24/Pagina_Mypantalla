@@ -146,6 +146,18 @@
 .ruleta-button:hover {
   background: linear-gradient(to right, #00bcd4, #005bb5);
 }
+.contact-button-img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-button-img:hover {
+  transform: scale(1.05);
+}
 
 /* 📱 Responsive CELULARES */
 @media (max-width: 768px) {

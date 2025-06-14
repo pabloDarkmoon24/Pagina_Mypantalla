@@ -42,6 +42,9 @@
   margin-bottom: 30px;
   padding: 0 20px;
 }
+.domina-card:hover {
+  animation: bounce 0.6s ease;
+}
 
 .domina-card {
   width: 250px;
