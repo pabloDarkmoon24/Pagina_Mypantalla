@@ -11,6 +11,14 @@
   color: white;
   overflow: hidden;
 }
+
+@font-face {
+  font-family: 'Montserrat-ExtraBoldr';
+  src: url('../../public/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .image2{
   display: none;
 }
@@ -42,13 +50,14 @@
   width: 100%;
 }
 
-/* Hero texto e imagen */
+/* titulo */
 .hero-heading {
   font-size: 60px;
   color: #00e6ff;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
+  font-family:'Montserrat-ExtraBoldr';
 }
 
 .hero-subheading {
@@ -74,6 +83,7 @@
   flex: 1;
   min-width: 300px;
   text-align: left;
+  
 }
 
 .hero-title {
@@ -81,6 +91,7 @@
   margin-bottom: 30px;
   text-align: center;
   line-height: 1.1;
+  font-family:'Montserrat-ExtraBoldr';
   
 }
 

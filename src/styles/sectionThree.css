@@ -5,6 +5,12 @@
   color: white;
   margin-top: 40px;
 }
+@font-face {
+  font-family: 'Montserrat-ExtraBoldr';
+  src: url('../../public/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .business-title {
   font-size: 50px;
@@ -16,10 +22,15 @@
 
 .highlight-magenta {
   color: #ff4ec2;
+  font-size: 60px;
+  font-family:'Montserrat-ExtraBoldr';
+  
 }
 
 .highlight-cyan2 {
   color: #00d4ff;
+  font-size: 60px;
+  font-family:'Montserrat-ExtraBoldr';
 }
 
 .business-description {

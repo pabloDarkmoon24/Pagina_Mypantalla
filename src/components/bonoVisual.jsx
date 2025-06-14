@@ -7,22 +7,24 @@ const BonoVisual = ({ codigoRedencion }) => {
   const descargarBono = async () => {
     if (!bonoRef.current) return;
 
-    // Clonamos el nodo y lo agrandamos en memoria
     const node = bonoRef.current;
     const clone = node.cloneNode(true);
+
     clone.style.width = "640px";
+    clone.style.height = "auto";
     clone.style.transform = "scale(1)";
     clone.style.transformOrigin = "top left";
+    clone.style.position = "relative";
 
-    // Ajustar posición absoluta del código
     const codeDiv = clone.querySelector("div");
     if (codeDiv) {
-      codeDiv.style.bottom = "280px";  // doble que original
-      codeDiv.style.fontSize = "40px";
-      codeDiv.style.padding = "0px 200px";
+      codeDiv.style.position = "absolute";
+      codeDiv.style.bottom = "240px";
+      codeDiv.style.fontSize = "26px";
+      codeDiv.style.padding = "0px 340px";
+      codeDiv.style.whiteSpace = "nowrap";
     }
 
-    // Lo ocultamos pero agregamos temporalmente al DOM
     const hiddenContainer = document.createElement("div");
     hiddenContainer.style.position = "fixed";
     hiddenContainer.style.top = "-10000px";
@@ -69,13 +71,14 @@ const BonoVisual = ({ codigoRedencion }) => {
         <div
           style={{
             position: "absolute",
-            bottom: "140px",
+            bottom: "120px",
             color: "white",
-            padding: "0px 100px",
-            fontSize: "20px",
+            padding: "0px 170px",
+            fontSize: "13px",
             fontWeight: "bold",
             whiteSpace: "nowrap",
             textAlign: "center",
+            alignContent:"center",
           }}
         >
           {codigoRedencion}

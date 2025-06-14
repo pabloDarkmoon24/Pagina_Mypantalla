@@ -5,7 +5,7 @@ export  const SectionThree = () => {
         <section className="business-model-section">
         <h2 className="business-title">
             <span className="highlight-magenta">¿CÓMO FUNCIONA </span>
-            <span className="highlight-cyan2">MODELO DE NEGOCIO</span>
+            <span className="highlight-cyan2"> NUESTRO <br /> MODELO DE NEGOCIO</span>
             <span className="highlight-magenta">?</span>
         </h2>
         <p className="business-description">

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Montserrat-ExtraBoldr';
+  src: url('../../public/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .domina-section {
   background-color: #7a42f4;
   color: white;
@@ -7,12 +14,14 @@
   margin-left: calc(-50vw + 50%);
 }
 
+
 .domina-title {
   font-size: 50px;
   font-weight: 900;
   margin-bottom: 0;
   margin-top: 0;
   line-height: 1.1;
+  font-family: 'Montserrat-ExtraBoldr';
 }
 
 .domina-subtitle {
@@ -22,6 +31,7 @@
   margin-bottom: 30px;
   color: #000;
   line-height: 1.1;
+  font-family: 'Montserrat-ExtraBoldr';
 }
 
 .domina-cards {

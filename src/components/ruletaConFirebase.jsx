@@ -84,50 +84,56 @@ export const RuletaConFirebase = () => {
   };
 
 return (
-  <div className="ruleta-container">
-    {/* RUEDA A LA IZQUIERDA */}
-    <div className="ruleta-col left">
-      <div className="ruleta-wheel-box">
-        <Wheel
-          mustStartSpinning={mustSpin}
-          prizeNumber={premioIndex}
-          data={data}
-          backgroundColors={['#00d4ff', '#e6007e']}
-          textColors={['#000']}
-          radiusLineColor="#fff"
-          outerBorderColor="#fff"
-          outerBorderWidth={5}
-          innerBorderColor="#e6007e"
-          innerBorderWidth={10}
-          fontSize={16}
-          onStopSpinning={handleStop}
-        />
-        {mostrarBono && premioFinal && (
-          <BonoVisual codigoRedencion={premioFinal.codigoRedencion} />
-        )}
+  <div className="ruleta-wrapper">
+    <div className="ruleta-container">
+      {/* CUADRO A LA IZQUIERDA */}
+      <div className="ruleta-col left">
+        <div className="ruleta-wheel-box">
+          <Wheel
+            mustStartSpinning={mustSpin}
+            prizeNumber={premioIndex}
+            data={data}
+            backgroundColors={['#00d4ff', '#e6007e']}
+            textColors={['#000']}
+            radiusLineColor="#fff"
+            outerBorderColor="#fff"
+            outerBorderWidth={5}
+            innerBorderColor="#e6007e"
+            innerBorderWidth={10}
+            fontSize={16}
+            onStopSpinning={handleStop}
+          />
+        </div>
+      </div>
+
+      {/* CUADRO A LA DERECHA */}
+      <div className="ruleta-col right">
+        <div className="ruleta-input-box">
+          <h1 className="ruleta-title">INGRESA TU <br /> CÓDIGO</h1>
+          <input
+            type="text"
+            value={codigo}
+            onChange={e => setCodigo(e.target.value.toUpperCase())}
+            placeholder="Ej: ABC123"
+            className="ruleta-input"
+          />
+          <button
+            onClick={handleParticipar}
+            disabled={mustSpin || loading}
+            className="ruleta-button"
+          >
+            {loading ? 'Verificando...' : 'GIRAR RULETA'}
+          </button>
+        </div>
       </div>
     </div>
 
-    {/* CUADRO A LA DERECHA */}
-    <div className="ruleta-col right">
-      <div className="ruleta-input-box">
-        <h1 className="ruleta-title">INGRESA TU <br /> CÓDIGO</h1>
-        <input
-          type="text"
-          value={codigo}
-          onChange={e => setCodigo(e.target.value.toUpperCase())}
-          placeholder="Ej: ABC123"
-          className="ruleta-input"
-        />
-        <button
-          onClick={handleParticipar}
-          disabled={mustSpin || loading}
-          className="ruleta-button"
-        >
-          {loading ? 'Verificando...' : 'GIRAR RULETA'}
-        </button>
+    {/* 🎁 BONO DEBAJO */}
+    {mostrarBono && premioFinal && (
+      <div className="ruleta-bono-box">
+        <BonoVisual codigoRedencion={premioFinal.codigoRedencion} />
       </div>
-    </div>
+    )}
   </div>
 );
 }

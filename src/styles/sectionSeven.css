@@ -46,6 +46,7 @@
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 40px;
+  font-family: 'Montserrat-ExtraBoldr';
 }
 
 .highlight {
@@ -87,6 +88,7 @@
   color: #00ffff;
   margin-bottom: 4px; /* casi pegado */
   line-height: 1.1;   /* reduce el espacio vertical interno */
+  font-family: 'Montserrat-ExtraBoldr';
 }
 
 .faq-subtitle {
