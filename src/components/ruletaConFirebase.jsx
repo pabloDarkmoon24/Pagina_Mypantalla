@@ -4,6 +4,7 @@ import { Wheel } from 'react-custom-roulette';
 import { db } from '../fireBase';
 import BonoVisual from './bonoVisual';
 import '../styles/sectionSix.css'
+import boton from '../../public/girar-ruleta.png'
 
 const data = [
   { option: 'bono 1 usd' },
@@ -94,7 +95,7 @@ return (
             prizeNumber={premioIndex}
             data={data}
             backgroundColors={['#00d4ff', '#e6007e']}
-            textColors={['#000']}
+            textColors={['#fff']}
             radiusLineColor="#fff"
             outerBorderColor="#fff"
             outerBorderWidth={5}
@@ -117,13 +118,13 @@ return (
             placeholder="Ej: ABC123"
             className="ruleta-input"
           />
-          <button
+          <img
+            src={boton}
+            alt="Girar ruleta"
             onClick={handleParticipar}
-            disabled={mustSpin || loading}
-            className="ruleta-button"
-          >
-            {loading ? 'Verificando...' : 'GIRAR RULETA'}
-          </button>
+            className={`ruleta-button-img ${mustSpin || loading ? 'disabled' : ''}`}
+          />
+
         </div>
       </div>
     </div>

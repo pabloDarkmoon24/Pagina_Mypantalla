@@ -141,22 +141,17 @@
   font-size: 30px;
   text-align: center;
 }
-
-.hero-btn {
-  margin: 10px auto 30px;
-  padding: 14px 30px;
-  background: linear-gradient(to right, #00e6ff, #007fff);
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 40px;
-  transition: 0.3s;
-  font-size: 30px;
-  display: inline-block;
+.hero-btn-img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.hero-btn:hover {
-  background: linear-gradient(to right, #00bcd4, #005bb5);
+.hero-btn-img:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -223,10 +218,6 @@
     margin-top: 20px;
   }
 
-  .hero-btn {
-    font-size: 18px;
-    padding: 12px 20px;
-  }
 
   .hero-image img {
     max-width: 240px;

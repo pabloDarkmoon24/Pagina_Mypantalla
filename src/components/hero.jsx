@@ -1,5 +1,6 @@
 import '../styles/hero.css'
 import celular from '../../public/celular.png'
+import boton from '../../public/ir-al-panel.png'
 
 
 export const Hero = () => {
@@ -49,9 +50,12 @@ export const Hero = () => {
           href="https://mypantalla.goplay.com.co"
           target="_blank"
           rel="noopener noreferrer"
-          className="hero-btn"
         >
-          IR AL PANEL DE DISTRIBUIDOR
+          <img
+            src={boton}
+            alt="Ir al panel de distribuidor"
+            className="hero-btn-img"
+          />
         </a>
       </div>
     </div>

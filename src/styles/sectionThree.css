@@ -85,6 +85,12 @@
     padding: 0 10px;
   }
 
+  .highlight-cyan2 {
+  color: #00d4ff;
+  font-size: 32px;
+  font-family:'Montserrat-ExtraBoldr';
+}
+
   .business-description {
     font-size: 16px;
     line-height: 1.5;

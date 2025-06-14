@@ -1,6 +1,7 @@
 import '../styles/sectionEight.css'
 import celular from '../../public/mockup-publicidad.png'
 import icon from '../../public/icon.png'
+import boton from '../../public/ir-a-el-canal.png'
 
 export const SectionEight = () => {
     return (
@@ -32,7 +33,17 @@ export const SectionEight = () => {
                 <li><span className="icon"><img src={icon} alt="+" /></span> Noticias y anuncios importantes de My Pantalla</li>
                 </ul>
 
-                <a href="https://t.me/mypantallaoficial" target="_blank" rel="noopener noreferrer" className="bonus-button">IR A EL CANAL</a>            
+                <a
+                href="https://t.me/mypantallaoficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <img
+                    src={boton}
+                    alt="Ir al canal de Telegram"
+                    className="bonus-button-img"
+                />
+                </a>            
             </div>
             </div>
         </div>

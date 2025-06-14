@@ -2,6 +2,7 @@ import '../styles/sectionSeven.css';
 import testimonio1 from '../../public/TESTIMONIOS-1.png'
 import testimonio2 from '../../public/TESTIMONIO-2.png'
 import testimonio3 from '../../public/TESTIMONIO-3.png'
+import boton from '../../public/ir-al-telegram.png'
 
 export const SectionSeven = () => {
   return (
@@ -56,7 +57,17 @@ export const SectionSeven = () => {
         <p className="faq-extra">
           <span className="red">¿Tienes alguna duda adicional?</span> Escríbenos directamente <br /> en nuestro canal de atención en Telegram!
         </p>
-        <a href="https://t.me/Mypantalla_Bot" target="_blank" rel="noopener noreferrer" className="telegram-btn">IR A TELEGRAM</a>
+        <a
+          href="https://t.me/Mypantalla_Bot"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+            <img
+              src={boton}
+              alt="Ir a Telegram"
+              className="telegram-button-img"
+            />
+          </a>
       </div>
     </section>
   );

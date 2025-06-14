@@ -125,20 +125,17 @@
   font-weight: bold;
 }
 
-.bonus-button {
-  display: inline-block;
-  background: linear-gradient(to right, #00ffff, #00c4ff);
-  color: #001240;
-  font-weight: 900;
-  font-size: 28px;
-  padding: 16px 40px;
-  border-radius: 40px;
-  text-decoration: none;
-  transition: background 0.3s ease;
+.bonus-button-img {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.bonus-button:hover {
-  background: linear-gradient(to right, #00c0e0, #00a5cc);
+.bonus-button-img:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 767px) {
@@ -198,11 +195,5 @@
     font-size: 16px;
   }
 
-  .bonus-button {
-    font-size: 18px;
-    padding: 12px 24px;
-    margin: 10px auto 0;
-    display: block;
-    width: fit-content;
-  }
+
 }

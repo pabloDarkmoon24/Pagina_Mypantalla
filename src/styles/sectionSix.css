@@ -41,6 +41,23 @@
   line-height: 1.2;
 }
 
+.ruleta-button-img {
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ruleta-button-img:hover {
+  transform: scale(1.05);
+}
+
+.ruleta-button-img.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
 .text-white {
   color: white;
   font-size: 62px;
@@ -125,19 +142,6 @@
   color: #ccc;
 }
 
-/* Botón */
-.ruleta-button {
-  width: 100%;
-  padding: 12px;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  background: linear-gradient(to right, #00e6ff, #007fff);
-  color: black;
-  transition: background 0.3s ease;
-}
 
 .ruleta-button:hover {
   background: linear-gradient(to right, #00bcd4, #005bb5);
@@ -173,10 +177,6 @@
   }
 
   .ruleta-input {
-    font-size: 18px;
-  }
-
-  .ruleta-button {
     font-size: 18px;
   }
 }
