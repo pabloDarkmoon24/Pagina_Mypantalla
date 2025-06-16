@@ -7,18 +7,18 @@ import '../styles/sectionSix.css'
 import boton from '../../public/girar-ruleta.png'
 
 const data = [
-  { option: 'bono 1 usd' },
-  { option: 'bono 10 usd' },
-  { option: 'bono 50 usd' },
-  { option: 'bono 100 usd' },
-  { option: 'directv pantalla' },
-  { option: 'vix pantalla' },
-  { option: 'prime pantalla' },
-  { option: 'canva pro' },
-  { option: 'max pantalla' },
-  { option: 'crunchyroll' },
-  { option: 'youtube' },
-  { option: 'sigue intentando' } 
+  { option: 'bono 1 usd', style: { textColor: '#000' } },
+  { option: 'bono 10 usd', style: { textColor: '#fff' } },
+  { option: 'bono 50 usd', style: { textColor: '#000' } },
+  { option: 'bono 100 usd', style: { textColor: '#fff' } },
+  { option: 'directv pantalla', style: { textColor: '#000' } },
+  { option: 'vix pantalla', style: { textColor: '#fff' } },
+  { option: 'prime pantalla', style: { textColor: '#000' } },
+  { option: 'canva pro', style: { textColor: '#fff' } },
+  { option: 'max pantalla', style: { textColor: '#000' } },
+  { option: 'crunchyroll', style: { textColor: '#fff' } },
+  { option: 'youtube', style: { textColor: '#000' } },
+  { option: 'sigue intentando', style: { textColor: '#fff' } }
 ];
 
 export const RuletaConFirebase = () => {
@@ -95,7 +95,6 @@ return (
             prizeNumber={premioIndex}
             data={data}
             backgroundColors={['#00d4ff', '#e6007e']}
-            textColors={['#fff']}
             radiusLineColor="#fff"
             outerBorderColor="#fff"
             outerBorderWidth={5}
@@ -128,8 +127,6 @@ return (
         </div>
       </div>
     </div>
-
-    {/* 🎁 BONO DEBAJO */}
     {mostrarBono && premioFinal && (
       <div className="ruleta-bono-box">
         <BonoVisual codigoRedencion={premioFinal.codigoRedencion} />
