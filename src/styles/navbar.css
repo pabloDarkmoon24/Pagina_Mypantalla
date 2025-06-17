@@ -1,0 +1,153 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+  padding: 0px 0;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.mypantalla-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.mypantalla-logo:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+  color: #00d4ff;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  
+}
+
+.logo:hover {
+  color: #ff4ec2;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links li {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background: #00d4ff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #00d4ff;
+  background-color: rgba(0, 212, 255, 0.1);
+  text-shadow: 0 0 6px #00d4ff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  padding: 10px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Open animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #000051;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+  }
+  .mypantalla-logo {
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    font-size: 20px;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    width: 100%;
+  }
+}

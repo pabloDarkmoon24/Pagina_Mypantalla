@@ -115,3 +115,14 @@
     font-size: 14px;
   }
 }
+
+.business-model-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px 60px;
+  text-align: center;
+  color: white;
+  background-color: #000051;
+  box-sizing: border-box;
+}
+

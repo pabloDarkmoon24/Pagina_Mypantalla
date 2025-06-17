@@ -130,3 +130,18 @@
     font-size: 28px;
   }
 }
+.tutorials-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  background-color: #000051;
+  box-sizing: border-box;
+}
+.tutorials-grid {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+}

@@ -74,10 +74,18 @@
 }
 
 .ruleta-subtext {
-  font-size: 22px;
-  font-weight: 400;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.contact-message {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
   color: white;
-  margin-top: 10px;
+  z-index: 1;
+  position: relative;
 }
 
 .ruleta-subtext span {

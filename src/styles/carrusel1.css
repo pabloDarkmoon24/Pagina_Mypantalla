@@ -1,0 +1,76 @@
+.carrusel-manual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  border-radius: 16px;
+  padding: 10px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Oculta los botones por defecto */
+.btn-carrusel {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.carrusel-manual:hover .btn-carrusel {
+  opacity: 0.7;
+  pointer-events: auto;
+}
+
+.btn-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 212, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: none;
+}
+
+.btn-carrusel.izquierda {
+  left: 10px;
+}
+
+.btn-carrusel.derecha {
+  right: 10px;
+}
+
+.img-carrusel:hover {
+  transform: scale(1.04);
+}
+@media (max-width: 768px) {
+  .carrusel-manual {
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .btn-carrusel {
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-carrusel.izquierda {
+    left: 5px;
+  }
+
+  .btn-carrusel.derecha {
+    right: 5px;
+  }
+
+  .img-carrusel {
+    max-width: 90vw;
+    max-height: 250px;
+  }
+}
