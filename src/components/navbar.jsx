@@ -21,7 +21,7 @@ export const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${open ? 'active' : ''}`}>
-          <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
+          <li><Link to="/Pagina_Mypantalla/" onClick={closeMenu}>Inicio</Link></li>
           <li><Link to="/estrella" onClick={closeMenu}>Estrella</Link></li>
           <li><Link to="/comando" onClick={closeMenu}>Comando</Link></li>
         </ul>

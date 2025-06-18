@@ -20,7 +20,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route
-          path="/"
+          path="/Pagina_Mypantalla/"
           element={
             <div>
                   <Popup/>

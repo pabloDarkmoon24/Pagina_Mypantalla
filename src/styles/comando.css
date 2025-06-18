@@ -19,6 +19,9 @@
 .banner-principal:hover {
   transform: scale(1.02);
 }
+.h1{
+  color: white;
+}
 .container input {
   width: 100%;
   max-width: 400px;

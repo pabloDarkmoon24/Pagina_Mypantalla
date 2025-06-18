@@ -69,4 +69,4 @@ export const Comando = () => {
       </div>
     </div>
   );
-};
+}; 
