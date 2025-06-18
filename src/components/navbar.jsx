@@ -21,9 +21,9 @@ export const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${open ? 'active' : ''}`}>
-          <li><Link to="/Mypantalla/" onClick={closeMenu}>Inicio</Link></li>
-          <li><Link to="/Mypantalla/estrella" onClick={closeMenu}>Estrella</Link></li>
-          <li><Link to="/Mypantalla/comando" onClick={closeMenu}>Comando</Link></li>
+          <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
+          <li><Link to="/estrella" onClick={closeMenu}>Estrella</Link></li>
+          <li><Link to="/comando" onClick={closeMenu}>Comando</Link></li>
         </ul>
       </div>
     </nav>

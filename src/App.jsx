@@ -20,7 +20,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route
-          path="/Mypantalla/"
+          path="/"
           element={
             <div>
                   <Popup/>
@@ -35,8 +35,8 @@ function App() {
               </div>
           }
         />
-        <Route path="/Mypantalla/estrella" element={<Rangos />} />
-        <Route path="/Mypantalla/comando" element={<Comando />} />
+        <Route path="/estrella" element={<Rangos />} />
+        <Route path="/comando" element={<Comando />} />
       </Routes>
     </Router>
   );
